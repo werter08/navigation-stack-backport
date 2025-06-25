@@ -7,7 +7,7 @@ public struct NavigationPath {
 
 	private var box: any NavigationPathBox
 
-	@available(iOS 16.0, *)
+	@available(iOS 16.0, tvOS 16.0, *)
 	var swiftUIPath: SwiftUI.NavigationPath {
 		get { box as! SwiftUI.NavigationPath }
 		set { box = newValue }
