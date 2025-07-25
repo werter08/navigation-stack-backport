@@ -7,10 +7,6 @@ struct UIKitNavigation<Root: View>: UIViewControllerRepresentable {
     
     func makeUIViewController(context: Context) -> UINavigationController {
         let navigationController = UINavigationController()
-#if os(iOS)
-        navigationController.navigationBar.prefersLargeTitles = true
-        navigationController.navigationBar.barStyle = .default
-#endif
         navigationController.navigationBar.isTranslucent = true
         authority.navigationController = navigationController
         return navigationController
